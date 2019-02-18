@@ -4,9 +4,9 @@ class Film extends Component{
 
   render(){
     return(<div className="film">
-      <p>{this.props.name}</p>
-    </div>)
-  }
+      <p><a href={this.props.url}>{this.props.name}</a></p>
+    </div>);
+  };
 }
 
 export default Film;
