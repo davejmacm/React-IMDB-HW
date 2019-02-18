@@ -1,4 +1,5 @@
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
+import FilmList from "../components/FilmList";
 
 class FilmBox extends Component{
   constructor(props){
@@ -35,7 +36,10 @@ class FilmBox extends Component{
 
 render() {
   return(
+    <Fragment>
     <h2>Movies</h2>
+    <FilmList data= {this.state.data}/>
+  </Fragment>
   )
 }
 
